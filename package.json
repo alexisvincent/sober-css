@@ -1,0 +1,39 @@
+{
+  "name": "sober-css",
+  "version": "0.0.1",
+  "description": "CSS in JS a la template string",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel lib -d dist",
+    "pre-commit": "npm run compile",
+    "dev": "babel lib -d dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisvincent/sober-css.git"
+  },
+  "keywords": [
+    "css",
+    "js"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Alexis Vincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexisvincent/sober-css/issues"
+  },
+  "homepage": "https://github.com/alexisvincent/sober-css#readme",
+  "dependencies": {
+    "postcss": "^5.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "chokidar": "^1.6.1"
+  }
+}

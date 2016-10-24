@@ -18,6 +18,7 @@ What if we just use ES6 template strings.
 ```javascript
 import { css } from 'sober-css'
 
+// language=css
 const styles = css`
     body {
         background-color: blue;
